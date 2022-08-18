@@ -28,6 +28,13 @@ ddg.explorer.port <- 6096
 # Parameter:  json.path - A file containing json produced by rdt or rdtLite.
 #
 .ddg.start.ddg.explorer <- function (json.path) {
+  # Check that java is installed
+  java_path <- Sys.which("java")
+  if (java_path == "") {
+    warning ("Java must be installed in order to visualize the provenance")
+    return()
+  }
+  
   # Quote the json.path so that if there are embedded spaces it will still
   # be passed as one string
   json.path <- paste0 ("\"", json.path, "\"")
