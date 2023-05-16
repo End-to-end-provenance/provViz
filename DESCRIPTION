@@ -37,7 +37,7 @@ Description: Displays provenance graphically for provenance collected by the 'rd
 License: GPL-3 | file LICENSE
 URL: https://github.com/ProvTools/provViz
 BugReports: https://github.com/End-to-end-provenance/provViz/issues
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.3
 Suggests:
   rdt,
   rdtLite
